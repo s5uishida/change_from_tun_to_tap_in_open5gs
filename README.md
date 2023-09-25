@@ -5,7 +5,9 @@ The default is a TUN interface.
 
 An example when the network interface name is `ogstap` is as follows.
 
-<h2 id="change_network">Changes of the network settings in UPF machine</h2>
+<a id="change_network"></a>
+
+## Changes of the network settings in UPF machine
 
 ```diff
 -ip tuntap add name ogstun mode tun
@@ -19,7 +21,9 @@ An example when the network interface name is `ogstap` is as follows.
 +iptables -t nat -A POSTROUTING -s 10.45.0.0/16 ! -o ogstap -j MASQUERADE
 ```
 
-<h2 id="change_upf">Changes of the configuration for UPF</h2>
+<a id="change_upf"></a>
+
+## Changes of the configuration for UPF
 
 - `open5gs/install/etc/open5gs/upf.yaml`
 ```diff
