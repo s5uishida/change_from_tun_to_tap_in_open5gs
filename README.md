@@ -1,5 +1,11 @@
 # A Note for Changing Network Interface of UPF from TUN to TAP in Open5GS
 
+---
+
+### [Sample Configurations and Miscellaneous for Mobile Network](https://github.com/s5uishida/sample_config_misc_for_mobile_network)
+
+---
+
 Open5GS UPF operates a network interface of which name containing the "tap" string as a TAP interface.
 The default is a TUN interface.
 
