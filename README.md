@@ -22,9 +22,6 @@ An example when the network interface name is `ogstap` is as follows.
 +ip tuntap add name ogstap mode tap
 +ip addr add 10.45.0.1/16 dev ogstap
 +ip link set ogstap up
- 
--iptables -t nat -A POSTROUTING -s 10.45.0.0/16 ! -o ogstun -j MASQUERADE
-+iptables -t nat -A POSTROUTING -s 10.45.0.0/16 ! -o ogstap -j MASQUERADE
 ```
 
 <a id="change_upf"></a>
