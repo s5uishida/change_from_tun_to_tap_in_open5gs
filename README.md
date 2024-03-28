@@ -30,14 +30,14 @@ An example when the network interface name is `ogstap` is as follows.
 
 - `open5gs/install/etc/open5gs/upf.yaml`
 ```diff
---- upf.yaml.orig       2023-07-02 01:46:43.934079072 +0900
-+++ upf.yaml    2023-07-02 01:46:49.334083190 +0900
-@@ -201,6 +201,7 @@
-       - addr: 127.0.0.7
-     subnet:
-       - addr: 10.45.0.1/16
-+        dev: ogstap
-     metrics:
-       - addr: 127.0.0.7
-         port: 9090
+--- upf.yaml.orig       2024-03-29 06:38:35.252793670 +0900
++++ upf.yaml    2024-03-29 06:37:56.318811109 +0900
+@@ -19,6 +19,7 @@
+       - address: 127.0.0.7
+   session:
+     - subnet: 10.45.0.1/16
++      dev: ogstap
+   metrics:
+     server:
+       - address: 127.0.0.7
 ```
